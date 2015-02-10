@@ -15,18 +15,28 @@ use yii\web\AssetBundle;
  */
 class AdminAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/asdf-studio/yii2-admin-module/assets';
-    public $css = [
-        'css/sb-admin.css',
-    ];
-    public $js = [
-        'js/admin.js',
-        'js/form.js',
-    ];
-    public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
-        'rmrevin\yii\fontawesome\AssetBundle',
-	    'cakebake\bootstrap\select\BootstrapSelectAsset',
-    ];
+
+    public function init()
+    {
+        $this->sourcePath = __DIR__ . '/assets';
+
+        $this->css = [
+            'css/sb-admin.css',
+        ];
+
+        $this->js = [
+            'js/admin.js',
+            'js/form.js',
+        ];
+
+        $this->depends = [
+            'yii\web\YiiAsset',
+            'yii\bootstrap\BootstrapAsset',
+            'rmrevin\yii\fontawesome\AssetBundle',
+            'cakebake\bootstrap\select\BootstrapSelectAsset',
+        ];
+
+        parent::init();
+    }
+
 }
