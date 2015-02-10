@@ -1,5 +1,5 @@
 {
-    "name": "asdf-studio/yii2-admin-module",
+    "name": "knjazevandr/yii2-admin-module",
     "description": "Admin module for Yii2 framework",
     "license": "BSD-3-Clause",
     "homepage": "http://asdf-studio.net/docs/yii2-admin-module",
@@ -10,7 +10,7 @@
             "email": "pavel@asdf404.net"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap": "*",
